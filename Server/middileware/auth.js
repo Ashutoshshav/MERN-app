@@ -4,15 +4,13 @@ async function restrictToLoggedinUserOnly(req, res, next) {
   const token = req.headers['authorization'];
 
   if (!token) {
-    return res.json({ msg: "Please login" });
+    return res.status(400).json({ msg: "Please login" });
   }
 
   const user = getUser(token);
-  //console.log(user)
 
   if (!user) {
-    //return res.render("login");
-    return res.json({ msg: "Please login" });
+    return res.status(400).json({ msg: "Please login" });
   }
 
   req.user = user;

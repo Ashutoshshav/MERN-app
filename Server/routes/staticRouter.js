@@ -5,12 +5,11 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   const allURL = await URL.find({});
-  res.send({ allURL });
+  res.status(200).send({ allURL });
 });
 
 router.get("/url/:shortId", async (req, res) => {
   const shortId = req.params.shortId;
-  //console.log(shortId);
 
   const url = await URL.findOneAndUpdate(
     {
@@ -25,8 +24,7 @@ router.get("/url/:shortId", async (req, res) => {
     },
     { new: true } 
   );
-  //console.log(url);
-  res.send(url.redirectURL);
+  res.status(200).redirect(url.redirectURL);
 });
 
 module.exports = router;

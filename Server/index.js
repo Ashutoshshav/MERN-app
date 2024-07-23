@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 const cookieParser = require("cookie-parser");
 const cors = require('cors');
 
@@ -27,6 +26,7 @@ app.use(cors({
   methods: ["*"],
   credentials: true
 }));
+
 app.use("/", staticRoute);
 app.use("/user", userRoute);
 app.use("/url", restrictToLoggedinUserOnly, urlRoute);
