@@ -9,6 +9,8 @@ This project implements a URL shortener service allowing users to shorten long U
 1. **Signup**: Allows users to create a new account.
 2. **Login**: Allows registered users to log in to their accounts.
 3. **Home**: Provides the main interface for shortening URLs and managing user links.
+4. **URL Analysis**: Provides Shorted URLs Number of clicks, clicking Date, Timing and Shorted URL Creater.
+5. **Forget Password**: Provides Forget Password functionality and Reset Password by OTP on email.
 
 The project utilizes JWT (JSON Web Tokens) for user authentication, enabling secure access to user-specific features and data.
 
