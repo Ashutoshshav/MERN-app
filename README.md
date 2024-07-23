@@ -4,7 +4,7 @@ A URL shortener web application built using the MERN stack (MongoDB, Express.js,
 
 ## Overview
 
-This project implements a URL shortener service allowing users to shorten long URLs into more manageable and shareable links. It consists of three main components:
+This project implements a URL shortener service allowing users to shorten long URLs into more manageable and shareable links. It consists of these main components:
 
 1. **Signup**: Allows users to create a new account.
 2. **Login**: Allows registered users to log in to their accounts.
