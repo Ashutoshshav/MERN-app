@@ -31,6 +31,7 @@ The project utilizes JWT (JSON Web Tokens) for user authentication, enabling sec
 - User Authentication: JWT-based authentication system for secure user sign-up and login.
 - URL Shortening: Generate short URLs from long ones using the ShortID package.
 - User-specific Dashboard: Logged-in users can view and manage their shortened URLs.
+- Forget Password: User can reset his Password using OTP that will received on his email.
 
 ## Installation
 
